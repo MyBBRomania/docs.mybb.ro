@@ -1,0 +1,66 @@
+---
+layout: page
+title:  "Upgrade"
+categories: instalare
+permalink: instalare/upgrade
+---
+
+## Pregătire pentru Upgrade
+
+Întainte de a trece la o versiune mai recentă de MyBB, ar trebui să citești anunțul din blog cu atenție. Schimbările din noua versiune vor fi explicate clar și vor oferi o imagine de ansamblu depsre cât de dificil va fi procesul de upgrade.
+
+1. În primulr rând, forumul trebuie dezactivat. Făcând asta, vă veți asigura că nimeni nu va întrerupe procesul de upgrade accidental. De reținut faptul că dezactivarea forumului folosind setarea **Board Online/Offline** **NU** este recomandată. Cea mai bună metodă este folosind o restricție `.htaccess` în directorul rădăcină al forumului vostru, astfel încât nimeni nu va avea acces la forum. Există o varietate de tutoriale care vă pot ajuta să realizați asta, iar unele servicii de găzduire oferă chiar unelte care fac asta automat.
+2. În al doilea rând, ar trebui să realizați un backup al fișierelor și a bazei de date, în caz că intervine o problemă. Puteți realiza un backup al bazei de date folosind **Panoul de control al Administratorului (AdminCP)** sau programul de gestionare al bazei de date folosit.
+3. Trebuie să dezactivați toate modificările (plugin-urile). Motivul pentru care trebuie să faceți asta este deoarece modificările s-ar putea să trebuiască să fie actualizate să funcționeze cu noua versiune de forum și pot cauza probleme dacă sunt lăsate activate. 
+
+### Descărcarea pachetului corect pentru upgrade
+
+Există două metode de a vă upgrada forumul: upgrade complet și upgrade cu fișiere schimbate.
+
+
+#### Upgrade Complet
+
+Dacă versiunea curentă este cu mai mult de un punct sub noua versiune, trebuie realizat un upgrade complet. De exemplu, dacă folosiți versiunea 1.6.1, iar versiunea nouă este 1.6.4, e necesar un upgrade complet. Același lucru se aplică și dacă folosiți 1.6.x și doriți să realizați upgrade la 1.8.x.
+
+[Descărcați ultima versiune][latest-mybb].
+
+#### Upgrade cu Fișiere Schimbate
+
+Dacă folosiți o versiune cu un sungur punct sub noua versiune - de exemplu, dacă folosiți 1.6.3, iar noua veriune este 1.6.4 - puteți folosi pacehtul cu fișiere schimbate. Acest pachet va fi disponibil în anunțul din blog dedicat versiunii noi. Dacă un pachet cu fișiere schimbate nu este disponibil, atunci trebuie folosită ultima versiune de MyBB.
+
+## Începerea procesului de Upgrade
+
+Odată ce ați descărcat pachetul potrivit pentru voi, e timpul să începeți procesul de upgrade. Vă rugăm să urmați acești pași cu mare atenție:
+
+1. Încărcați **toate** fișierele și dosarele din pachetul descărcat (conținutul dosarului `Upload/` dacă folosiți pachetul complet), inclusiv dosarul `install/` (dacă există), înlocuind copiile existente ale fișierelor de pe server.
+2. Dacă anunțul din blog menționează cu scriptul de upgrate **este* necesar, urmați pașii următori:
+
+	1. Deschideți pagina principală a forumului în borwser-ul web folosit și adăugați `install/` în URL. De exemplu, `www.domeniulvostru.ro/install/` sau `www.domeniulvostru.ro/forum/install/`.
+	2. S-ar putea să vă ceară să ștergeți un fișier denumit `lock` din folder-ul `install/`. Folosiți un client FTP sau un File Manager pentru a șterge fișierul `install/lock`.
+	3. Ar trebui să vedeți o listă de tip drop down din care să alegeți de la ce versiune de MyBB realizați upgrade-ul. Aveți grijă să alegeți versiunea corectă - versiunea pe care o folosiți în momentul de față - altfel, upgrade-ul nu va funcționa corespunzător.
+	4. Urmați instrucțiunile pentru a realiza upgrade-ul.
+	5. După ce procesul de upgrade a luat sfârșit, verificați dacă fișierul `lock` a fost creat în dosarul `install/`. Dacă lipsește, creați-l sau ștergeți întregul dosar `install/` de pe server. Pentru protecție în plus, `chmod 644 inc/config.php`.
+
+3. Dacă anunțul din blog menționează că există schimbări în cadrul temei, faceți următoarele:
+
+	1. Intrați în **AdminCP > Template & Style > Find Updated Templates**. Va fi afișată o listă cu toate șabloanele care au fost schimbate în timpul upgrade-ului.
+	2. Puteți fie să resetați șabloanele la valorile implicite - cu alte cuvinte, toate schimbările pe care le-ați făcut în cadrul lor vor fi șterse - sau puteți vedea un **Raport de Diferențe (Diff Report)** care vă va arăta ce este schimbat mai exact. Dacă ați instalat o temă personalizată, este recomandt să verificați Raportul de Diferențe și să aplicați schimbările necesare.
+
+4. Dacă anunțul din blog menționează că există modificări lingvistice și fie ați personalizat pachetul de limbă Engleză (pachetul implicit) sau ați instalat un pachet de limbă personalizt, faceți următoarele:
+
+	1. Verificați dacă pachetul de limbă folosit este actualizat în [Translation Releases Forum][translations-forum] sau pe pagina de traduceri din [MyBB România][translations-mybbro] dacă folosiți pachetul de limba română. Descărcați și instalați orice actualizări necesare.
+	2. Dacă ați făcut modifcări în pachet sau vă ocupați de un pachet de limbă pentru MyBB, citiți anunțul din forum pentru o listă cu toate modificările lingvistice și aplicați schimbările necesare.
+
+5. Procesul de upgrade este acum finalizat. Puteți să vă reactivați forumul ștergând restricția `.htaccess` sau din AdminCP. Înainte să faceți asta, asigurați-vă că forumul funcționează corect și arată cum doriți.
+
+## Concluzie
+
+Dacă întâmpinați vreo problemă la orice pas din procesul de upgrade, puteți cere ajutor pe [forumul MyBB România][mybbro] sau pe [forumul oficial][mybb].
+
+**Felicitări!** Tocmai v-ați upgradat forumul!
+
+[latest-mybb]: http://mybb.com/download/
+[translations-forum]: http://community.mybb.com/forum-169.html
+[translations-mybbro]: http://mybb.ro/translations.php
+[mybbro]: http://mybb.ro
+[mybb]: http://community.mybb.com/

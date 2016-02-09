@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {% for category in site.categories %}
+    <div class="index-category">
+      <h2>{{ category | first | capitalize }}</h2>
+        <ul class="posts">
+          {% for posts in category %}
+            {% for post in posts reversed %}
+              {% if post.title %}
+              <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+
+</div>

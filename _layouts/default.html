@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <header id="header-panel">
+	<div class="wrap">
+	  <h1><a href="{{ site.baseurl }}/">Documentație MyBB</a> {% if page.title %} &rsaquo; {{ page.categories | first | capitalize }} &rsaquo;  <span style="color:#CCC">{{ page.title }}</span> {% endif %} </h1> 
+        </div>
+      </header>
+      <div class="wrap">
+	<aside id="sidebar_wrap">
+	  <div id="sidebar">
+            {% for category in site.categories %}
+              <div data-role="collapsible">
+                <h4>{{ category | first | capitalize }}</h4>
+                  <ul>
+                    {% for posts in category %}
+                    {% for post in posts reversed %}
+                      {% if post.title %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                      {% endif %}
+                    {% endfor %}
+                    {% endfor %}
+                   </ul>
+	          </div>
+            {% endfor %}
+	</aside>
+      {{ content }}
+      {% include footer.html %}
+      </div>
+    </div>
+
+    </body>
+</html>

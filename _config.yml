@@ -1,0 +1,14 @@
+# Site settings
+title: Documentatie MyBB
+email: contact@mybb.ro
+description: ""
+baseurl: "/docs.mybb.ro"
+url: "http://mybbromania.github.io"
+facebook_username: MyBB-România-206696092674468
+facebook_title: MyBB-România
+twitter_username: MyBBRomania
+github_username:  MyBBRomania
+
+# Build settings
+markdown: kramdown
+permalink: pretty
