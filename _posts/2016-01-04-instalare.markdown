@@ -57,7 +57,7 @@ Pentru a accesa sistemul de instalare, trebuie să navigați către directorul `
 
 Dacă ați încărcat fișierele corespunzător și ați accesat sistemul de instalare, ar trebui să vedeți o pagină asemănătoare:
 
-[![Pagina de întâmpinare](/docs.mybb.ro/assets/images/install/welcome.jpg)](/docs.mybb.ro/docs.mybb.ro/assets/images/install/welcome.jpg)
+[![Pagina de întâmpinare](assets/images/install/welcome.jpg)](/docs.mybb.roassets/images/install/welcome.jpg)
 
 Tot ceea ce trebuie să faceți este să apăsați pe butonul **Next**.
 
@@ -67,13 +67,13 @@ MyBB folosește licența GNU LGPL. Pentru a putea folosi această platformă, tr
 
 Dacă doriți să aflați mai multe informații despre licența GNU LGPL și ceea ce reprezintă, [consultați site-ul GNU][lgnu].
 
-[![Licența GNU LGPL](/docs.mybb.ro/assets/images/install/license.jpg)](/docs.mybb.ro/docs.mybb.ro/assets/images/install/license.jpg)
+[![Licența GNU LGPL](assets/images/install/license.jpg)](/docs.mybb.roassets/images/install/license.jpg)
 
 ### Verificarea Cerințelor
 
 Această pagină verifică dacă serverul îndeplinește [cerințele][mybb-req] necesare pentru a rula MyBB.
 
-[![Verificare Cerințe](/docs.mybb.ro/assets/images/install/requirements.jpg)](/docs.mybb.ro/assets/images/install/requirements.jpg)
+[![Verificare Cerințe](assets/images/install/requirements.jpg)](assets/images/install/requirements.jpg)
 
 ### Configurare Bază de Date
 
@@ -111,25 +111,25 @@ Odată ce ați introdus datele corecte, puteți apăsa pe butonul **Next**. Dac�
 
 Dacă aveți probleme cu acest pas, contactați găzduirea pentru a vedea care sunt datele corecte. Acestea pot fi de obicei aflate din panoul de control al găzduirii (ex: cPanel, Ensim, DirectAdmin, Plesk).
 
-[![Verificare Baza de Date](/docs.mybb.ro/assets/images/install/database.jpg)](/docs.mybb.ro/assets/images/install/database.jpg)
+[![Verificare Baza de Date](assets/images/install/database.jpg)](assets/images/install/database.jpg)
 
 ### Crearea Tabelelor
 
 În această pagină sunt introduse tabelele în baza de date. Nu e necesar decât să așteptați să apară butonul **Next** pentru a trece la următorul pas.
 
-[![Crearea Tabelelor](/docs.mybb.ro/assets/images/install/table.jpg)](/docs.mybb.ro/assets/images/install/table.jpg)
+[![Crearea Tabelelor](assets/images/install/table.jpg)](assets/images/install/table.jpg)
 
 ### Inserarea Datelor
 
 În acest pas, datele implicite sunt introduse în tabelele create anterior. La fel ca și la pasul precedent, trebuie doar să apăsați butonul **Next**.
 
-[![Inserarea Datelor](/docs.mybb.ro/assets/images/install/populate.jpg)](/docs.mybb.ro/assets/images/install/populate.jpg)
+[![Inserarea Datelor](assets/images/install/populate.jpg)](assets/images/install/populate.jpg)
 
 ### Instalarea Temei
 
 Tema implicită este importată în forum. Trebuie doar acționat butonul **Next** pentru a trece la următoarea pagină.
 
-[![Inserarea Temei](/docs.mybb.ro/assets/images/install/theme.jpg)](/docs.mybb.ro/assets/images/install/theme.jpg)
+[![Inserarea Temei](assets/images/install/theme.jpg)](assets/images/install/theme.jpg)
 
 ### Configurarea Forumului
 
@@ -163,7 +163,7 @@ Aceasta este calea în care va fi setat modulul cookie. Dacă aveți mai mult de
 
 Aceasta este adresa de email pe care membri comunității vă vor putea contacta folosind link-ul **Contact Us** aflat în partea de jos a forumului. Aceeași adresă va fi folosită și ca adresa de email a webmaster-ului, când forumul trimite email-uri.
 
-[![Configurarea Forumului](/docs.mybb.ro/assets/images/install/config.jpg)](/docs.mybb.ro/assets/images/install/config.jpg)
+[![Configurarea Forumului](assets/images/install/config.jpg)](assets/images/install/config.jpg)
 
 ### Cont Administrator
 
@@ -181,7 +181,7 @@ Aceasta este parola pentru contul de administrator.
 
 Aceasta este adresa de email pentru contul de administrator.
 
-[![Cont Administrator](/docs.mybb.ro/assets/images/install/admin.jpg)](/docs.mybb.ro/assets/images/install/admin.jpg)
+[![Cont Administrator](assets/images/install/admin.jpg)](assets/images/install/admin.jpg)
 
 ### Finalizare Instalare
 
@@ -189,7 +189,7 @@ Aceasta este adresa de email pentru contul de administrator.
 
 După instalare, ar trebui să existe un fișier numit `lock` în directorul `install/` care va preveni accesul la acest sistem. Dacă nu există și nu doriți să ștergeți acest director, creați fișierul.
 
-[![Finalizare Instalare](/docs.mybb.ro/assets/images/install/finish.jpg)](/docs.mybb.ro/assets/images/install/finish.jpg)
+[![Finalizare Instalare](assets/images/install/finish.jpg)](assets/images/install/finish.jpg)
 
 ## Instalare Rapidă SSH
 
