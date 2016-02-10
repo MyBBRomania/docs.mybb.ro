@@ -108,7 +108,7 @@ Dacă nu doriți să trimiteți aceste informații, pur și simplui debifați op
 După ce ați folosit Sistemul de Migrare, ar trebui să rulați toate uneltele *"Recount and Rebuild"*, aflate în secțiunea *"Tools and Maintenance"* din AdminCP. După asta, ar trebui reconstruită și memoria cache. În final, este recomandat să verificați toate permisiunile (pentru forumuri și grupuri).
 
 
-[mybb-install]: /docs.mybb.ro/instalare/instalare-mybb/
+[mybb-install]: /instalare/instalare-mybb/
 [merge-system]: http://www.mybb.com/download/merge-system/
-[troubleshoot-page]: /docs.mybb.ro/migrare/depanare-probleme/
+[troubleshoot-page]: /migrare/depanare-probleme/
 
