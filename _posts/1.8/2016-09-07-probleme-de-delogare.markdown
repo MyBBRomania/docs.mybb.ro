@@ -19,5 +19,5 @@ Dacă după ce ați făcut schimbarea de mai sus încă nu sunteți capabil să 
 Vă rugăm să citiți [Probleme de Logare][probleme-logare] sau [Cookies][cookies]. În ambele situații, cea mai bună soluție este să vă ștergeți fișierele cookies din browser.
 
 [community-link]: https://community.mybb.com/showthread.php?tid=25210&pid=177101#pid177101
-[probleme-logare]: {{site.baseurl}}/faq/probleme-de-logare
+[probleme-logare]: {{site.baseurl}}/1.8/faq/probleme-de-logare
 [cookies]: /
